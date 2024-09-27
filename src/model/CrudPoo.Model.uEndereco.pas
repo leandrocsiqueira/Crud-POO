@@ -3,10 +3,10 @@ unit CrudPoo.Model.uEndereco;
 interface
 
 type
-  TEndereco = class
+  TEndereco = class sealed
   private
-    FLogradouro: string;
     FId: Integer;
+    FLogradouro: string;
     FIdPessoa: Integer;
   public
     property Id: Integer read FId write FId;

@@ -19,10 +19,6 @@ object FormPrincipal: TFormPrincipal
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = 110
-    ExplicitTop = 110
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object ButtonPrincipal: TButton
       Left = 20
       Top = 70
@@ -30,6 +26,7 @@ object FormPrincipal: TFormPrincipal
       Height = 25
       Caption = 'Principal'
       TabOrder = 0
+      OnClick = ButtonPrincipalClick
     end
     object MemoPrincipal: TMemo
       Left = 120

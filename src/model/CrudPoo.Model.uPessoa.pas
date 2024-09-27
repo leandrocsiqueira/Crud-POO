@@ -7,7 +7,7 @@ uses
   CrudPoo.Model.uEndereco;
 
 type
-  TPessoa = class
+  TPessoa = class sealed
   private
     FId: Integer;
     FNome: string;
@@ -15,18 +15,9 @@ type
   public
     constructor Create;
     destructor Destroy; override;
-
-    property Id: Integer
-      read FId
-      write FId;
-
-    property Nome: string
-      read FNome
-      write FNome;
-
-    property Endereco: TList<TEndereco>
-      read FEndereco
-      write FEndereco;
+    property Id: Integer read FId write FId;
+    property Nome: string read FNome write FNome;
+    property Endereco: TList<TEndereco> read FEndereco write FEndereco;
   end;
 
 implementation
